@@ -277,7 +277,7 @@
             // Optional auto-play functionality
             this.autoPlayInterval = setInterval(() => {
                 this.goToNextSlide();
-            }, 3000); // Change slide every 5 seconds
+            }, 5000); // Change slide every 5 seconds
         },
 
         stopAutoPlay() {
