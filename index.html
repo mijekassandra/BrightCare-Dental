@@ -28,15 +28,15 @@
                     <a href="#" class="header__nav-link">Home</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">About</a>
+                    <a href="#about-section" class="header__nav-link">About</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">Services</a>
+                    <a href="#service-offers" class="header__nav-link">Services</a>
                 </li>
                 <li class="header__nav-item">
-                    <button class="primary-btn" type="button" aria-label="Book Now">
+                    <a href="#booking-section" class="primary-btn" type="button" aria-label="Book Now">
                         Book Now
-                    </button>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -57,7 +57,7 @@
             <img src="images/hero-section-img.png" alt="Hero Image" class="main__hero-image">
         </section>
 
-    <section class="about-us-section">
+    <section class="about-us-section" id="about-section">
         <div class="about-us-section__overlay"></div>
         <div class="about-us-section__content fixed-padding">
             <h2 class="about-us-section__title">About BrightCare</h2>
@@ -75,7 +75,7 @@
         </div>
     </section>
 
-        <section class="service-offer-step fixed-padding">
+        <section class="service-offer-step fixed-padding" id="service-offers">
             <div class="service-offer__desc">
                 <h2 class="service-offer-step__title">
                     How to get our service? 
@@ -112,15 +112,14 @@
                     <p>
                         Keeping your smile healthy with routine care and early detection.
                     </p>
-                    <button class="primary-btn--outline primary-btn--small" type="button" aria-label="Learn More">Learn More</button>
-                </div>
+                    <a href="general-preventive.html" class="primary-btn--outline primary-btn--small" aria-label="Learn More">Learn More</a>                </div>
                 <div class="services-section__item">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
                     <h4>Restorative Dentistry</h4>
                     <p>
                         Repairing damaged teeth and restoring full function.
                     </p>
-                    <button class="primary-btn--outline primary-btn--small" type="button" aria-label="Learn More">Learn More</button>
+                    <a href="restorative.html" class="primary-btn--outline primary-btn--small" aria-label="Learn More">Learn More</a>
                 </div>
                 <div class="services-section__item">
                     <i class="fa-solid fa-teeth-open"></i>
@@ -128,7 +127,7 @@
                     <p>
                         Enhancing the beauty and confidence of your smile.
                     </p>
-                    <button class="primary-btn--outline primary-btn--small" type="button" aria-label="Learn More">Learn More</button>
+                    <a href="cosmetic.html" class="primary-btn--outline primary-btn--small" aria-label="Learn More">Learn More</a>
                 </div>
                 <div class="services-section__item">
                     <i class="fa-solid fa-teeth"></i>
@@ -136,7 +135,7 @@
                     <p>
                         Straightening teeth and improving bite alignment.
                     </p>
-                    <button class="primary-btn--outline primary-btn--small" type="button" aria-label="Learn More">Learn More</button>
+                    <a href="orthodontic.html" class="primary-btn--outline primary-btn--small" aria-label="Learn More">Learn More</a>
                 </div>
                 <div class="services-section__item">
                     <i class="fa-solid fa-house-medical"></i>
@@ -144,7 +143,7 @@
                     <p>
                         Advanced treatments and urgent dental solutions.
                     </p>
-                    <button class="primary-btn--outline primary-btn--small" type="button" aria-label="Learn More">Learn More</button>
+                    <a href="specialized-emergency.html" class="primary-btn--outline primary-btn--small" aria-label="Learn More">Learn More</a>
                 </div>
                 <div class="services-section__item">
                     <i class="fa-solid fa-heart-pulse"></i>
@@ -152,7 +151,7 @@
                     <p>
                         Treating gum disease and preserving your natural teeth.
                     </p>
-                    <button class="primary-btn--outline primary-btn--small" type="button" aria-label="Learn More">Learn More</button>
+                    <a href="gum-periodontal.html" class="primary-btn--outline primary-btn--small" aria-label="Learn More">Learn More</a>
                 </div>
             </div>
         </section>
@@ -257,8 +256,8 @@
                         <div class="testimonials-section__client-card">
                             <div class="testimonials-section__client-card-accent"></div>
                             <div class="testimonials-section__client-card-content">
-                                <img src="images/client2.jpg" alt="Michelle Chen" class="testimonials-section__image">
-                                <p class="testimonials-section__client-name">Michael Chen</p>
+                                <img src="images/client2.jpg" alt="Anna Mendez" class="testimonials-section__image">
+                                <p class="testimonials-section__client-name">Anna Mendez</p>
                                 <div class="testimonials-section__stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -280,8 +279,8 @@
                         <div class="testimonials-section__client-card">
                             <div class="testimonials-section__client-card-accent"></div>
                             <div class="testimonials-section__client-card-content">
-                                <img src="images/client3.jpg" alt="Emily Rodriguez" class="testimonials-section__image">
-                                <p class="testimonials-section__client-name">Emily Rodriguez</p>
+                                <img src="images/client3.jpg" alt="Gracie Foster" class="testimonials-section__image">
+                                <p class="testimonials-section__client-name">Gracie Foster</p>
                                 <div class="testimonials-section__stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -307,7 +306,7 @@
                 </div>
             </div>
         </section>
-        <section class="booking-section fixed-padding">
+        <section class="booking-section fixed-padding" id="booking-section">
             <div class="booking-section__header">
                 <h3>Book an Appointment</h3>
                 <p>Book an appointment with our team of experienced dentists and friendly staff.</p>
@@ -349,19 +348,53 @@
                         >
                     </div>
                     <div class="booking-section__form-group">
-                        <label for="doctorSelect" class="booking-section__label">Doctor</label>
+                        <label for="timeSelect" class="booking-section__label">Time</label>
                         <select 
-                            id="doctorSelect" 
-                            name="doctorSelect" 
+                            id="timeSelect" 
+                            name="timeSelect" 
                             class="booking-section__select" 
                             required
                         >
-                            <option value="">Select a doctor</option>
-                            <option value="dr-john-doe">Dr. Jonathan Doe</option>
-                            <option value="dr-sarah-smith">Dr. Sarah Smith</option>
-                            <option value="dr-michael-chen">Dr. Michael Chen</option>
-                            <option value="dr-emily-rodriguez">Dr. Emily Rodriguez</option>
-                            <option value="dr-david-wilson">Dr. David Wilson</option>
+                            <option value="">Select a time</option>
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="1:00 PM">1:00 PM</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="booking-section__form-row">
+                    <div class="booking-section__form-group">
+                        <label for="procedureSelect" class="booking-section__label">Procedure</label>
+                        <select 
+                            id="procedureSelect" 
+                            name="procedureSelect" 
+                            class="booking-section__select" 
+                            required
+                        >
+                            <option value="">Select a procedure</option>
+                            <option value="general-preventive">General & Preventive Care</option>
+                            <option value="restorative">Restorative Dentistry</option>
+                            <option value="cosmetic">Cosmetic Dentistry</option>
+                            <option value="orthodontic">Orthodontic Care</option>
+                            <option value="specialized-emergency">Specialized & Emergency Care</option>
+                            <option value="gum-periodontal">Gum & Periodontal Care</option>
+                        </select>
+                    </div>
+                    <div class="booking-section__form-group">
+                        <label for="branchSelect" class="booking-section__label">Preferred Branch</label>
+                        <select 
+                            id="branchSelect" 
+                            name="branchSelect" 
+                            class="booking-section__select" 
+                            required
+                        >
+                            <option value="">Select a branch</option>
+                            <option value="brooklyn-heights">Brooklyn Heights Branch</option>
+                            <option value="silver-lake">Silver Lake Branch</option>
                         </select>
                     </div>
                 </div>
@@ -386,7 +419,7 @@
                         >
                         <span class="booking-section__checkbox-text">I agree to the <a href="#" class="booking-section__link">privacy policy</a></span>
                     </label>
-                </div>
+                </div> 
                 <button type="submit" class="primary-btn primary-btn--large booking-section__submit" aria-label="Confirm Appointment">
                     Confirm Appointment
                 </button>
